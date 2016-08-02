@@ -30,7 +30,7 @@ namespace Selenium
 
             driver = new InternetExplorerDriver(options);
             driver.Manage().Window.Maximize();
-            driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(30));
+            driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(30)); 
             driver.Navigate().GoToUrl(this.baseURL);
             driver.FindElementById("lst-ib").Clear();
             driver.FindElementById("lst-ib").SendKeys("tire");
